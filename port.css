@@ -23,15 +23,28 @@ border-radius:14px;
 margin:0 20px;
 box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
-nav ul{list-style:none;display:flex;gap:20px}
-nav ul li a{text-decoration:none;color:white;font-weight:500}
-.menu-toggle{display:none;font-size:24px;cursor:pointer}
+nav ul{list-style:none;
+       display:flex;gap:20px}
+nav ul li a{text-decoration:none;
+            color:white;
+            font-weight:500}
+.menu-toggle{display:none;
+             font-size:24px;
+             cursor:pointer}
 section{padding:60px 5%}
-.hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.hero{display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between}
 .hero-text{flex:1}
 .hero-text h1{font-size:42px;color:#0a192f}
 .hero-text p{margin:15px 0}
-.btn{background:#0a192f;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer}
+.btn{background:#0a192f;
+     color:white;
+     padding:10px 20px;
+     border:none;
+     border-radius:5px;
+     cursor:pointer}
 .card-container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -171,4 +184,28 @@ background:rgba(255,255,255,0.1);
 padding:8px 14px;
 border-radius:8px;
 display:inline-block;
+}
+.project-buttons{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-top:10px;
+}
+
+.project-buttons .btn{
+flex:1;
+text-align:center;
+}
+.btn{
+display:inline-block;
+padding:10px 16px;
+background:#0077ff;
+color:white;
+border-radius:6px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#005fcc;
 }
