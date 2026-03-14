@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="port.css">
+</head>
+<body>
+<header id="myheading">
+<h2>My Portfolio</h2>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav>
+<ul id="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#documents">Documents</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="social-icons">
+<a href="https://github.com/VamsiKrishna-9" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://leetcode.com/u/Vamsikrishna_9" target="_blank">
+<i class="fa-solid fa-code"></i>
+</a>
+
+
+</div>
+
+</header>
+<section id="home" class="hero">
+
+<div class="hero-text">
+<h1>Hello, I'm Vamsi Krishna</h1>
+
+<h2 class="typing"></h2>
+
+<p>Final-year Engineering Student | Data Science & AI Enthusiast</p>
+
+<div class="hero-buttons">
+<a href="resume.pdf" target="_blank" class="resume-btn">View Resume</a>
+
+
+</div>
+
+</div>
+
+<div class="hero-image">
+<img src="profile.png" alt="Vamsi Krishna">
+</div>
+
+</section>
+<section id="about">
+    <h2>About Me</h2>
+    
+    <p>
+        I am <strong>Vamsi Krishna Vadlamudi</strong>, a final-year engineering student at 
+        <strong>RVR & JC College of Engineering, Guntur</strong>, graduating in 2026. 
+        I am passionate about building intelligent systems and 
+        data-driven solutions. My interests lie in 
+        <strong>Data Science</strong>, <strong>Machine Learning</strong>, and 
+        <strong>Software Development</strong>.
+    </p>
+
+    <p>
+        I have experience working with <strong>Python</strong>, <strong>SQL</strong>, 
+        <strong>DBMS</strong>, and <strong>Machine Learning</strong>. 
+        I enjoy developing projects that combine <strong>data analysis</strong> with 
+        real-world problem solving.
+    </p>
+
+    <p>
+        One of my key projects focuses on <strong>Explainable AI for Battery State of Health Prediction 
+        using SHAP and LIME</strong>, 
+        where I explored both predictive modeling and 
+        model interpretability.
+    </p>
+
+    
+    <br>
+
+    <h2>What I Am Currently Doing</h2>
+
+    <p>
+        Currently, I am expanding my development skills by learning the 
+        <strong>MERN Stack (MongoDB, Express.js, React.js, Node.js)</strong> 
+        to build <strong>full-stack web applications</strong>.
+    </p>
+
+    
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<br>
+<div class="card-container" >
+    <div class="card" >
+        <h3> Explainable AI for Battery State of Health Prediction Using SHAP and LIME.</h3>
+        <br>
+        <p>
+            Developed a CNN-LSTM based deep learning model to predict 
+            Battery State of Health (SOH) in Electric Vehicles.
+            Implemented Explainable AI techniques like SHAP and LIME 
+            to interpret model predictions.
+        </p>
+
+        <p><strong>Tech Stack:</strong> Python, TensorFlow, CNN-LSTM, SHAP, LIME.</p>
+
+        <br>
+
+        <a href="Research_Paper_Kittu,_Raya,_Jedzz[1].pdf" target="_blank" class="btn">
+            View Research Paper
+        </a>
+
+        <a href="https://github.com/VamsiKrishna-9/Explainable-AI-for-Battery-State-of-Health-Prediction-using-SHAP-and-LIME" target="_blank" class="btn" style="margin-left:10px;">
+            View GitHub
+        </a>
+    </div>
+    <div class="card">
+        <h3>Sales Analysis & Reporting Dashboard using Power BI.</h3>
+        <br>
+        <p>
+            The Sales Analysis Dashboard is built using Power BI to visualize key metrics like 
+            sales, profit, and customer trends. It uses DAX for KPIs and Power Query for data shaping, 
+            enabling insights into top products, regions, and customers, 
+            supporting better business decisions through interactive visuals.
+        </p>
+        <p><strong>Tech Stack:</strong> Power BI, DAX, Power Query Editor.</p>
+        <br>
+        <a href="report.png" target="_blank" class="btn">
+            View DashBoard/Report 
+        </a>
+        <a href="https://github.com/VamsiKrishna-9/Sales-Analysis-Reporting-Dashboard-for-Business-Decision-Making" target="_blank" class="btn" style="margin-left:10px;">
+            View GitHub
+        </a>
+    </div>
+
+</div>
+</section>
+<section id="documents">
+<h2>Certificates / Marksheets</h2>
+<br>
+<div class="card-container">
+<div class="card"><strong>Certificates</strong></div>
+
+<div class="card"><strong>Marksheets</strong><br><br>
+    <a href="3-2 marksheet.pdf" target="_blank" class="btn">
+            Latest Mark Sheet
+        </a>
+</div>
+
+</div>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: vvkrishna879@gmail.com</p>
+</section>
+<footer>
+<p>© 2026 Vamsi Krishna</p>
+
+<div class="visitor-counter">
+👁 Profile Views: <span id="view-count">0</span>
+</div>
+
+</footer>
+<script>
+function toggleMenu(){
+document.getElementById('nav-links').classList.toggle('active');
+}
+</script>
+<script src="port.js"></script>
+</body>
+</html>
